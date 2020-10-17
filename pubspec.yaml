@@ -1,0 +1,5 @@
+name: flutter01_client
+description: 一个测试企业级项目server
+
+dependencies:
+  http_server: ^0.9.8+3
