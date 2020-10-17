@@ -2,10 +2,15 @@ import 'dart:convert';
 import 'dart:io';
 import 'data.dart';
 
+/**
+ * 请求地址：
+ * http://192.168.1.100:8080?action=getProducts
+ * http://192.168.1.100:8080?action=news
+ */
+
 main(List<String> args) async {
   var requestServer = await HttpServer.bind("192.168.1.100", 8080);
   print("http服务器已启动");
-  //处理起请求，有并发
   await for (HttpRequest request in requestServer) {
     handleMessage(request);
   }
@@ -24,7 +29,9 @@ void handleMessage(HttpRequest request) {
 }
 
 void handleGET(HttpRequest request) {
+  print(request.uri);
   var aciton = request.uri.queryParameters["action"];
+  // print(json.encode(null));
   if (aciton == "getProducts") {
     request.response
       ..statusCode = HttpStatus.ok

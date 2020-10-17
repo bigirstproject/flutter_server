@@ -3,19 +3,19 @@
   "packages": [
     {
       "name": "http_server",
-      "rootUri": "file:///Users/lidexian/Library/flutter/.pub-cache/hosted/pub.flutter-io.cn/http_server-0.9.8+3",
+      "rootUri": "file:///Users/lidexian/.pub-cache/hosted/pub.flutter-io.cn/http_server-0.9.8+3",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
     {
       "name": "mime",
-      "rootUri": "file:///Users/lidexian/Library/flutter/.pub-cache/hosted/pub.flutter-io.cn/mime-0.9.7",
+      "rootUri": "file:///Users/lidexian/.pub-cache/hosted/pub.flutter-io.cn/mime-0.9.7",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
     {
       "name": "path",
-      "rootUri": "file:///Users/lidexian/Library/flutter/.pub-cache/hosted/pub.flutter-io.cn/path-1.7.0",
+      "rootUri": "file:///Users/lidexian/.pub-cache/hosted/pub.flutter-io.cn/path-1.7.0",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
@@ -25,7 +25,7 @@
       "packageUri": "lib/"
     }
   ],
-  "generated": "2020-10-16T05:34:19.805824Z",
+  "generated": "2020-10-17T13:11:36.035618Z",
   "generator": "pub",
   "generatorVersion": "2.10.1"
 }
