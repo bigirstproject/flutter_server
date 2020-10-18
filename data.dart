@@ -4,7 +4,8 @@ var products = {
       "desc": "这是一个描述1",
       "imageUrl": "assets/images/products/1.jpeg",
       "type": "新款1",
-      "name": "苹果笔记本1"
+      "name": "苹果笔记本1",
+      "point": "point"
     },
     {
       "desc": "这是一个描述2",
@@ -28,7 +29,8 @@ var products = {
       "desc": "这是一个描述5",
       "imageUrl": "assets/images/products/5.jpeg",
       "type": "新款5",
-      "name": "苹果笔记本5"
+      "name": "苹果笔记本5",
+      "point": "point"
     },
     {
       "desc": "这是一个描述6",
@@ -52,7 +54,8 @@ var products = {
       "desc": "这是一个描述3",
       "imageUrl": "assets/images/products/3.jpeg",
       "type": "新款3",
-      "name": "苹果笔记本3"
+      "name": "苹果笔记本3",
+      "point": "point"
     },
     {
       "desc": "这是一个描述4",
