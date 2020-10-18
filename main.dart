@@ -29,16 +29,17 @@ void handleMessage(HttpRequest request) {
 }
 
 void handleGET(HttpRequest request) {
-  print(request.uri);
-  var aciton = request.uri.queryParameters["action"];
-  // print(json.encode(null));
-  if (aciton == "getProducts") {
+  print("request.uri = ${request.uri}");
+  var action = request.uri.queryParameters["action"];
+  if (action == "getProducts") {
+    var page = request.uri.queryParameters["page"];
+    print("第${page}也数据" + json.encode(page));
     request.response
       ..statusCode = HttpStatus.ok
       ..write(json.encode(products))
       ..close();
   }
-  if (aciton == "news") {
+  if (action == "news") {
     request.response
       ..statusCode = HttpStatus.ok
       ..write(json.encode(news))
