@@ -47,6 +47,14 @@ void handleGET(HttpRequest request) {
       ..write(json.encode(news))
       ..close();
   }
+  if (action == "contactCompany") {
+    var msg = request.uri.queryParameters["msg"];
+    print("第contactCompany${msg}页数据" + json.encode(msg));
+    request.response
+      ..statusCode = HttpStatus.ok
+      ..write("success ok ${msg}")
+      ..close();
+  }
 }
 
 void handlePOST(HttpRequest request) {
