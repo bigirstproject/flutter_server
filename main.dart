@@ -33,13 +33,15 @@ void handleGET(HttpRequest request) {
   var action = request.uri.queryParameters["action"];
   if (action == "getProducts") {
     var page = request.uri.queryParameters["page"];
-    print("第${page}也数据" + json.encode(page));
+    print("第getProducts${page}页数据" + json.encode(page));
     request.response
       ..statusCode = HttpStatus.ok
       ..write(json.encode(products))
       ..close();
   }
-  if (action == "news") {
+  if (action == "getNews") {
+    var page = request.uri.queryParameters["page"];
+    print("第getNews${page}页数据" + json.encode(page));
     request.response
       ..statusCode = HttpStatus.ok
       ..write(json.encode(news))
